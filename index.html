@@ -14,10 +14,11 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/monserrat.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -191,22 +192,22 @@
         </p>
         <div class="clearfix apps">
           <div class="col-sm-4 text-center">
-            <div class="appbox">
+            <a href="#" class="appbox">
               <img src="img/wapple.png" alt="">
               <span class="app">app store</span>
-            </div>
+            </a>
           </div>
           <div class="col-sm-4 text-center">
-            <div class="appbox">
+            <a href="#" class="appbox">
               <img src="img/wplaystore.png" alt="">
               <span class="app">play store</span>
-            </div>
+            </a>
           </div>
           <div class="col-sm-4 text-center">
-            <div class="appbox">
+            <a href="#" class="appbox">
               <img src="img/wwindows.png" alt="">
               <span class="app">windows</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -255,6 +256,65 @@
             <img src="img/screenshot.png" alt="">
           </div>
         </div>
+        <div class="pagination owl-dots">
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="container">
+        <h3 class="box-head center">testimonial</h3>
+        <div class="testimonial-container">
+          <div class="navs">
+              <span class="prev"></span>
+              <span class="next"></span>
+          </div>
+          <div id="testimonial" class="owl-carousel">
+              <div class="item">
+                <img src="img/.png" alt="">
+                <span class="name">jone doe</span>
+                <span class="title">director</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="ratings">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+              </div>
+          </div>  
+        </div> 
+      </div>
+    </section>
+    <section class="videodemo">
+      <div class="container text-center">
+        <img src="img/video.png" alt="">
+        <span>Watch Video Demo</span>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <h3 class="box-head center">prcing plan</h3>
+        <p class="desc center">
+            There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour randomised.
+        </p>
+        <div class="pricing-box clearfix">
+          <div class="col-sm-4 align-left">
+            <span class="plan">standard</span>
+            <span class="price">$99/Per Month</span>
+            <ul>
+              <li>Free Setup</li>
+              <li>Free Feature One</li>
+              <li>Unlimited Feature Two</li>
+              <li>40 GB Storage</li>
+              <li>Cloud Backup</li>
+            </ul>
+            <a href="#" class="btn-buy"></a>
+          </div>
+        </div>
       </div>
     </section>
     </div> <!-- /container -->       
@@ -262,12 +322,37 @@
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
       <script src="js/vendor/bootstrap.min.js"></script>
       <script src="js/owl.carousel.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
       <script src="js/main.js"></script>
       <script>
-        $('.owl-carousel').owlCarousel({
+        var owl =  $('.screenshots')
+        owl.owlCarousel({
           items:4,
-          loop:true,
           margin:30,
+          dotsContainer:".pagination",
+        })
+        $('.pagination span').click(function () {
+          var dots = $('.pagination span');
+          dots.removeClass('active');
+          $(this).addClass('active')
+          var myIndex = $(this).index();
+          myIndex = parseInt(myIndex * 4);
+          owl.trigger('to.owl.carousel', [myIndex, 250]);
+        });
+
+        var testi = $('#testimonial');
+        testi.owlCarousel({
+          items:1,
+          loop:true,
+          navs:true,
+        })
+        $('.prev').click(function(){
+          testi.trigger('prev.owl.carousel', [300])
+          console.log($(this).attr('class'))
+        })
+        $('.next').click(function(){
+          testi.trigger('next.owl.carousel', [300])
+          console.log($(this).attr('class'))
         })
       </script> 
     </body>
