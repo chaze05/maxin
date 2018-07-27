@@ -155,6 +155,8 @@ body{
 .infographics .stats .info span{
     display: block;
     text-align: left;
+    font-size: 15px;
+    text-transform: capitalize;
 }
 .infographics .info-holder {
     border: 1px solid #ddd;
@@ -319,8 +321,14 @@ section .desc.center{
 /* download  */
 
 /* screenshot */
+.screenshot {
+    padding: 50px 0;
+}
 .screenshot .box-head{
     margin-bottom: 50px;
+}
+.screenshot .screenshots{
+    margin: 50px 0;
 }
 /* screenshot */
 

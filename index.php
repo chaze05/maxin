@@ -217,8 +217,43 @@
         <p class="desc center">
             There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour randomised.
         </p>
-        <div class="screenshots owl-carousel">
-          <div class="item"></div>
+        <div class="screenshots owl-carousel owl-theme">
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/screenshot.png" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -226,13 +261,13 @@
       <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
       <script src="js/vendor/bootstrap.min.js"></script>
-      <script src="js/vendor/owl.carousel.js"></script>
+      <script src="js/owl.carousel.js"></script>
       <script src="js/main.js"></script>
       <script>
         $('.owl-carousel').owlCarousel({
+          items:4,
           loop:true,
-          margin:10,
-          nav:true,
+          margin:30,
         })
       </script> 
     </body>
