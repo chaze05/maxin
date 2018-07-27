@@ -460,10 +460,74 @@ section .desc.center{
 .pricing .center{
     margin-bottom: 40px;
 }
-.pricing .pricing-box .col-sm-4{
+.pricing .pricing-box .planbox{
+    position: relative;
+    max-width: 368px;
     background-color: white;
     border: 1px solid #c1c1c1; 
     text-align: center;
+    padding: 40px 0;
+}
+
+.pricing .pricing-box .planbox:nth-child(2){
+    margin: 0 15px;
+}
+.pricing .pricing-box .planbox:before{
+    position: absolute;
+    content:'';
+    background-color: #066ce7;
+    width: 100%;
+    max-width: 370px;
+    height: 4px;
+    top: -1px;
+    left: 0;;
+    display: none;
+}
+.pricing .plan{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #262626;
+    text-transform: uppercase;
+}
+.pricing .price{
+    display: block;
+    font-size: 15px;
+    color: #4d4d4d;
+    margin: 30px 0;
+}
+.pricing .price span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.pricing ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;;
+}
+.pricing ul li{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #4d4d4d;
+}
+.pricing .btn-buy{
+    font-size: 15px;
+    color: #262626;
+    display: inline-block;
+    width: 126px;
+    line-height: 40px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 2px solid #066ce7;
+    transition: all .35s ease-in-out;
+    text-decoration: none;
+}
+.pricing .btn-buy:hover{
+    background-color: #066ce7;
+    color: white;
+    transition: all .35s ease-in-out;
 }
 /* Pricing Plan */
 
