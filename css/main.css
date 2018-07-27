@@ -98,6 +98,14 @@ body{
     background-color: #ffffff;
     text-decoration: none;
     border-radius: 30px;
+    border: 1px solid transparent;
+    transition:all .35s ease-in-out;
+}
+.banner-area .left .btn-container a:hover{
+    background-color: #066ce7;
+    color: white;
+    transition:all .35s ease-in-out;
+    border: 1px solid white;
 }
 .banner-area .left .btn-container .btn-try{
     margin-right: 20px;
@@ -112,14 +120,20 @@ body{
 /* Banner Area */
 
 /* Info Graphics */
+.infographics{
+    padding-bottom: 70px;
+}
 .infographics .stats{
     position: relative;
+    border-radius: 10px;
     max-width: 970px;
     width: 100%;
     margin: 0 auto;
     top: -50px;
     height: 170px;
     background-color: white;
+    margin-bottom: 50px;
+    box-shadow: 0 5px #f2f2f2;
 }
 .infographics .stats .col-sm-4{
     padding-top: 50px;
@@ -142,11 +156,203 @@ body{
     display: block;
     text-align: left;
 }
+.infographics .info-holder {
+    border: 1px solid #ddd;
+    max-width: 328px;
+    padding: 30px 0;
+}
+.infographics .info-holder img{
+    margin-bottom: 15px;
+}
+.infographics .info-holder h4{
+    font-size: 18px;
+    color: #262626;
+}
+.infographics .info-holder .sub{
+    font-size: 14px;
+}
 /* Info Graphics */
+
+/* ABout */
+.about{
+    background-color: #fafafa;
+    padding: 99px 0;
+}
+section .box-head{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #262626;
+    position: relative;
+    font-weight: 700;
+}
+section .box-head:before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 40px;
+    background-color: #066ce7;
+    left: 0;
+    bottom: -10px;
+}
+section .subinfo{
+    font-size: 16px;
+    color: #4d4d4d;
+    margin: 50px 0 20px;
+    display: block; 
+    font-weight: 600;
+}
+section  .desc{
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.about .desc{
+    margin-bottom: 20px;
+}
+.about .btn-readmore{
+    position: relative;
+    font-size: 15px;
+    color: #ffffff;
+    width: 126px;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #066ce7;
+    text-transform: capitalize;
+    border: 1px solid #066ce7;
+    transition: all .35s ease-in-out;
+}
+.about .btn-readmore:hover{
+    color: #066ce7;
+    border: 1px solid #066ce7;
+    background-color: #ffffff;
+    transition: all .35s ease-in-out;
+}
+
+/* ABout */
+
+
+/* Features */
+.features{
+    padding: 50px 0;
+}
+.features .center{
+    margin-bottom:50px;
+}
+section .center{
+    text-align: center;
+}
+section  .box-head.center:before{
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+section .desc.center{
+    text-align: center;
+}
+.features .featuresbox{
+    margin: 50px 0;
+}
+.features .feature-box {
+    position: relative;
+    margin-top: 65px;
+}
+.features .text-right .feature-box{
+    padding-right: 85px;
+}
+.features .text-left .feature-box{
+    padding-left: 85px;
+}
+.features .feature-box .title{
+    font-size: 18px;
+    font-weight:700;
+    text-transform: capitalize;
+}
+.features .feature-box img {
+    position: absolute;
+    top: -20px;
+}
+.features .text-right .feature-box img{
+    right: 5px;
+}
+.features .text-left .feature-box img{
+    left: 5px;
+}
+/* Features */
+
+/* download  */
+
+.download{
+    background-color: #061f5f;
+    padding: 50px 0;
+}
+.download .box-head{
+    color: white;
+    text-align: center;
+}
+.download .box-head:before{ 
+    display: none;
+}
+.download .desc{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top:30px;
+}
+.download .apps .appbox{
+    margin: 50px 0 0;
+}
+.download .apps img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.download .apps .app{
+    font-size: 24px;
+    color:white;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+/* download  */
+
+/* screenshot */
+.screenshot .box-head{
+    margin-bottom: 50px;
+}
+/* screenshot */
+
+
+
+
+
+/* fixed */
+.align-right{
+    margin-left: auto;
+}
+.align-center{
+    margin: 0 auto;
+}
+/* fixed */
+
+
+
+
+
 
 
 /* Media Queries */
 
+
+@media only screen and (max-width:1200px){
+    /* faetures */
+    .features .feature-box{
+        margin-top: 40px;
+    }
+    /* faetures */
+}
 @media only screen and (max-width:991px){
     .navbar-nav li{
         margin-right: 0;
@@ -158,11 +364,76 @@ body{
         width: 100%;
         padding: 0 15px;
     }
+
+    /* faetures */
+    .features .feature-box{
+        margin-top: 15px;
+    }
+    .features .feature-box img{
+        position: relative;
+        top: 0;
+    }
+    .features .text-right .feature-box{
+        padding-right: 0;
+    }
+    .features .text-left .feature-box{
+        padding-left: 0;
+    }
+    /* faetures */
 }
 
-
 @media only screen and (max-width:767px){
+    section{
+        padding: 25px 0 !important
+    }
     .np{
         padding: 0 15px;
     }
+    .navbar-toggle{
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+
+    .header{
+        height: auto;
+        max-height: 848px;
+    }
+
+
+/* banner */
+    .banner-area{
+        margin-top: 0;
+    }
+    .banner-area .left{
+        padding-top: 15px;
+    }
+
+    .banner-area .right{
+        padding: 30px 15px;
+    }
+/* banner */
+
+/* infographics */
+    .infographics .stats{
+        top: 0;
+        height: auto;
+    }
+    .infographics .info-holder{
+        margin: 15px auto;
+    }
+/* infographics */
+
+/* about */
+    .about img{
+        margin: 50px auto 0;
+    }
+/* about */
+    /* faetures */
+    .features .feature-box{
+        margin: 50px auto;
+        text-align: center;
+    }
+    /* faetures */
 }
