@@ -619,12 +619,105 @@ section .desc.center{
     padding-left: 36px;
     padding-right: 158px;
     box-shadow: 2px 2px #e3e3e3;
+    background-image: url(../img/telegram.png);
+    background-repeat: no-repeat;
+    background-position: center left 5px;
+    outline: none;
+}
+.subscribe .email .btn-subscribe{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 10px;
+    width: 150px;
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    background-color: #066ce7;
+    border: 1px solid #066ce7;
+    text-decoration: none;
+    transition: all .35s ease-in-out;
+    border-radius:10px;
+    text-transform: capitalize;
+}
+.subscribe .email .btn-subscribe:hover{
+    color: #066ce7;
+    background-color: #fff;
+    transition: all .35s ease-in-out
 }
 /* subscribe */
 
 
+/* contact */
+.contact{
+    padding: 50px 0;
+    background-color: #0f0f0f;
+}
+.contact .get-touch{
+    background-color: #fafafa;
+}
+.contact form{
+    background-color: #fafafa;
+    padding: 30px 40px;
+}
+.contact form input{
+    padding: 0 15px;
+    max-width:270px;
+}
+.contact form textarea{
+    padding: 0 15px;
+    width: 100%;
+    height: 140px;
+    resize: none;
+    margin: 0 auto;
+    margin: 25px 0;
+}
+.contact form .submit{
+    font-size: 15px;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #066ce7;
+    outline: none;
+    border: 0;
+    text-align: center;
+    padding: 0;
+}
+/* contact */
 
+/* footer */
+footer{
+    padding: 30px 0;
+    color: white;
+    background-color: #242424;
+}
+footer ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;;
+}
+footer ul li{
+    display: inline-block;
+    vertical-align: middle;
 
+    margin-left: 15px;
+}
+footer ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+/* footer */
 
 
 
@@ -748,4 +841,26 @@ section .desc.center{
         }
         /* prcing */
 
+        /* app blog */
+        .appblog .blog-list .blog{
+            margin: 30px auto;
+        }
+        /* app blog */
+
+        /* subscribe */
+        .subscribe .email{
+            padding: 0;
+        }
+        .subscribe .email input{
+            padding: 0 36px;
+            max-width: 100%;
+        }
+        .subscribe .email .btn-subscribe{
+            position: relative;;
+            width: 100%;
+            display: block;
+            margin: 25px 0;
+            right: 0;
+        }
+        /* subscribe */
     }

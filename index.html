@@ -415,7 +415,52 @@
         </div>
       </div>
     </section>
-    </div> <!-- /container -->       
+    <section class="contact">
+      <div class="container">
+        <div class="clearfix">
+          <div class="col-sm-4 get-touch">
+            <h4 class="heading">Get in Touch</h4>
+            <p class="desc center">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour randomised.
+          </p>
+          </div>
+          <div class="col-sm-7 np col-sm-offset-1">
+            <form id="sendMessage">
+              <h4 class="heading">Leave a Comment</h4>
+              <div class="clearfix">
+                <div class="col-sm-6 align-left np">
+                  <input type="text" name="name" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-sm-6 align-right np">
+                  <input type="text" name="email" class="form-control" placeholder="Eamil">
+                </div>
+                <div class="col-xs-12 np">
+                  <textarea name="mesasge" class="form-control" id="" placeholder="Write Message"></textarea>
+                </div>
+              </div>
+              <input type="submit" value="Send Message" class="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>    
+      <footer>
+        <div class="container">
+            <div class="col-sm-6 text-left">
+                Copyright  2018 <a href="#">MAXIN</a>  All Right Reserved.
+            </div>
+            <div class="col-sm-6 text-right">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+
+      </footer>    
       <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
       <script src="js/vendor/bootstrap.min.js"></script>
@@ -423,35 +468,7 @@
       <script src="js/jquery.validate.min.js"></script>
       <script src="js/main.js"></script>
       <script>
-        var owl =  $('.screenshots')
-        owl.owlCarousel({
-          items:4,
-          margin:30,
-          dotsContainer:".pagination",
-        })
-        $('.pagination span').click(function () {
-          var dots = $('.pagination span');
-          dots.removeClass('active');
-          $(this).addClass('active')
-          var myIndex = $(this).index();
-          myIndex = parseInt(myIndex * 4);
-          owl.trigger('to.owl.carousel', [myIndex, 250]);
-        });
-
-        var testi = $('#testimonial');
-        testi.owlCarousel({
-          items:1,
-          loop:true,
-          navs:true,
-        })
-        $('.prev').click(function(){
-          testi.trigger('prev.owl.carousel', [300])
-          console.log($(this).attr('class'))
-        })
-        $('.next').click(function(){
-          testi.trigger('next.owl.carousel', [300])
-          console.log($(this).attr('class'))
-        })
+      
       </script> 
     </body>
 </html>
