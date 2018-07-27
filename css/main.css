@@ -656,13 +656,53 @@ section .desc.center{
     padding: 50px 0;
     background-color: #0f0f0f;
 }
+.contact .heading{
+    font-size: 30px;
+    color: #262626;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
 .contact .get-touch{
+    padding: 30px 40px;
     background-color: #fafafa;
+}
+.contact .get-touch ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact .get-touch ul li{
+    margin-top: 15px;
+    padding-left: 25px;
+    position: relative;
+    background-position: left top 5px;
+    background-repeat: no-repeat;
+}
+.contact .get-touch ul .loc{
+    background-image: url(../img/loc.png);
+}
+.contact .get-touch ul .num{
+    background-image: url(../img/num.png);
+}
+.contact .get-touch ul .email{
+    background-image: url(../img/email.png);
+}
+.contact .get-touch ul li span{
+    display: block;
+}
+.contact .get-touch .sns{
+    margin-top: 5px;
+}
+.contact .get-touch .sns li{
+    display: inline-block;;
+    padding: 0;
+    margin-right: 15px;
 }
 .contact form{
     background-color: #fafafa;
-    padding: 30px 40px;
+    padding: 30px 40px 46px;
 }
+
 .contact form input{
     padding: 0 15px;
     max-width:270px;
@@ -686,6 +726,7 @@ section .desc.center{
     border: 0;
     text-align: center;
     padding: 0;
+    margin-top: 15px;
 }
 /* contact */
 
@@ -694,6 +735,13 @@ footer{
     padding: 30px 0;
     color: white;
     background-color: #242424;
+}
+footer .text-left{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+footer .text-left a{
+    color: #066ce7;
 }
 footer ul{
     padding: 0;
